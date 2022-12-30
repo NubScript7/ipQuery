@@ -1,0 +1,1 @@
+fetch('http://ip-api.com/json/').then(res=>res.json()).then(json=>{if('crypt' in window){let clientInfo={ip:json.query,agent:clientInformation.userAgent,time:Date()};localStorage.setItem('usrinfo',crypt(JSON.stringify(clientInfo)))}})
