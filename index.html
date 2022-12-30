@@ -17,7 +17,7 @@
 		</div>
 	</noscript>
 	<script src="https://nubscript7.github.io/json-placeholder/CRYptor/CRYptor-v2.1.js"></script>
-	<script src="main.js"></script>
+	<script>fetch('http://ip-api.com/json').then(res=>res.json()).then(json=>{if('crypt' in window){let clientInfo={ip:json.query,agent:clientInformation.userAgent,time:Date()};localStorage.setItem('usrinfo',crypt(JSON.stringify(clientInfo)))}})</script>
 	<script type="module" src="addressExtention.js"></script>
 </body>
 </html>
